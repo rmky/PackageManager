@@ -73,7 +73,7 @@ class StaticInstaller
             self::printException($e);
         }
         
-        /*self::printToStdout("Searching for apps in vendor-folder...");
+        self::printToStdout("Searching for apps in vendor-folder...");
         $vendorBase = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..';
         $installedAppAliases = ListApps::findAppAliasesInVendorFolders($vendorBase);
         self::printToStdout("found " . count($installedAppAliases) . " apps" . PHP_EOL);
@@ -82,7 +82,7 @@ class StaticInstaller
             self::printToStdout('-> Installing app "' . $app_alias . '": ' . PHP_EOL . PHP_EOL);
             $result = self::install($app_alias);
             self::printToStdout(($result ? trim($result, ".") : 'Nothing to do') . PHP_EOL);
-        }*/
+        }
         
         self::setTempFile([]);
         
